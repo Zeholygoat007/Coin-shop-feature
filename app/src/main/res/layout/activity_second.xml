@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="You have 256 coins"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp"
+                        android:textAlignment="center"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="#AEAEAE"
+                        android:layout_marginBottom="10dp"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="205dp"
+                            android:backgroundTint="@color/light_pink"
+                            app:strokeWidth="0dp"
+                            app:cardCornerRadius="10dp"/>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Super Cinta"
+                                android:textColor="@color/purple"
+                                android:textSize="18sp"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/light_gray"
+                                android:textFontWeight="700"
+                                android:text="Super Cinta Someone to let them know You've really interested in them"
+                                android:textAlignment="center"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                                app:layout_constraintWidth_percent="0.8" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/white"
+                                    app:cardCornerRadius="20dp"
+                                    app:strokeWidth="0dp"
+                                    app:cardElevation="3dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/imageView2"
+                                            android:layout_width="30dp"
+                                            android:layout_height="10dp"
+                                            android:layout_gravity="center|bottom"
+                                            android:layout_marginTop="27dp"
+                                            android:layout_weight="3"
+                                            app:srcCompat="@drawable/supercintaone" />
+
+                                        <TextView
+                                            android:id="@+id/textView6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="-10dp"
+                                            android:layout_weight="1"
+                                            android:text="x5"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/purple" />
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:background="#E6C0FF">
+
+                                            <TextView
+                                                android:id="@+id/textView60"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|center_horizontal"
+                                                android:layout_marginStart="32dp"
+                                                android:layout_marginEnd="4dp"
+                                                android:gravity="center"
+                                                android:text="1,690"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/black"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                                                app:layout_constraintHorizontal_bias="1.0"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintWidth_percent="0.6" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView3"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_weight="1"
+                                                android:gravity="center"
+                                                app:layout_constraintStart_toEndOf="@+id/textView60"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:srcCompat="@drawable/coinicon" />
+
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                    </LinearLayout>
+
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/white"
+                                    app:cardCornerRadius="20dp"
+                                    app:strokeWidth="0dp"
+                                    app:cardElevation="3dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Will win"
+                                            android:textSize="11sp"
+                                            android:textAllCaps="true"
+                                            android:textAlignment="center"
+                                            android:layout_weight="0.2"
+                                            android:textColor="@color/white"
+                                            android:background="#AE00FF"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Anther Coin"
+                                            android:textAllCaps="true"
+                                            android:textSize="10sp"
+                                            android:textAlignment="center"
+                                            android:layout_weight="0.2"
+                                            android:textColor="@color/black"
+                                            android:background="@color/green"/>
+                                        <ImageView
+                                            android:id="@+id/imageView2card2"
+                                            android:layout_width="45dp"
+                                            android:layout_height="25dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="0dp"
+                                            android:layout_weight="2"
+                                            app:srcCompat="@drawable/supercintatwo" />
+
+                                        <TextView
+                                            android:id="@+id/x300"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
+                                            android:layout_weight="1"
+                                            android:text="x300"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/purple" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:background="#E6C0FF">
+
+                                            <TextView
+                                                android:id="@+id/textView60_card2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:layout_marginStart="32dp"
+                                                android:layout_marginEnd="4dp"
+                                                android:gravity="center"
+                                                android:text="1,690"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/black" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView3_card2"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_weight="1"
+                                                android:gravity="center"
+                                                android:layout_toRightOf="@id/textView60_card2"
+                                                app:srcCompat="@drawable/coinicon" />
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/white"
+                                    app:cardCornerRadius="20dp"
+                                    app:strokeWidth="0dp"
+                                    app:cardElevation="3dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Anther Coin"
+                                            android:textAllCaps="true"
+                                            android:textSize="10sp"
+                                            android:textAlignment="center"
+                                            android:layout_weight="0.2"
+                                            android:textColor="@color/black"
+                                            android:background="@color/green"/>
+                                        <ImageView
+                                            android:id="@+id/imageView2card3"
+                                            android:layout_width="65dp"
+                                            android:layout_height="25dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="15dp"
+                                            android:layout_weight="2"
+                                            app:srcCompat="@drawable/supercintatree" />
+
+                                        <TextView
+                                            android:id="@+id/x60"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="0dp"
+                                            android:layout_weight="1"
+                                            android:text="x300"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/purple" />
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:background="#E6C0FF">
+
+                                            <TextView
+                                                android:id="@+id/textView60_card3"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|center_horizontal"
+                                                android:layout_marginStart="32dp"
+                                                android:layout_marginEnd="4dp"
+                                                android:gravity="center"
+                                                android:text="1,690"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/black"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toStartOf="@+id/imageView3_card3"
+                                                app:layout_constraintHorizontal_bias="1.0"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintWidth_percent="0.6" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView3_card3"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_weight="1"
+                                                android:gravity="center"
+                                                app:layout_constraintStart_toEndOf="@+id/textView60_card3"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:srcCompat="@drawable/coinicon" />
+
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                    </LinearLayout>
+
+                                </com.google.android.material.card.MaterialCardView>
+
+
+
+                            </LinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#56000000"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_marginTop="-20dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/corners">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:gravity="center"
+                        android:textSize="14sp"/>
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        app:strokeColor="@color/purple"
+                        android:background="@drawable/card_corner"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="256"
+                            android:paddingStart="4dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/lato_bold"
+                            android:textColor="@color/purple"/>
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="2dp"
+                            android:src="@drawable/coinicon"
+                            />
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/balanceplusicon"
+                            />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Unsufficient Balence"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato"
+                    android:text="We will automatically exchange the coins for\nSuper Coins coins fo XX amount. The rest\n of the coins will go into your wallet"
+                    android:textAlignment="center"
+                    android:textColor="@color/light_gray"
+                    android:textSize="14sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_balence"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
